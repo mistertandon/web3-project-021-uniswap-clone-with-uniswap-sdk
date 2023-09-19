@@ -27,15 +27,17 @@ const SwapTokenContextProvider = ({ children }) => {
   const [dai, setDai] = useState("");
   const [tokenData, setTokenData] = useState([]);
 
+  
+// BooToken Token deployed to 0xbFD3c8A956AFB7a9754C951D03C9aDdA7EC5d638
+// ERC20Life Token deployed to 0x38F6F2caE52217101D7CA2a5eC040014b4164E6C
+// SingleSwapToken Token deployed to 0xc075BC0f734EFE6ceD866324fc2A9DBe1065CBB1
+// SwapMultiHop Token deployed to 0x837a41023CF81234f89F956C94D676918b4791c1
+
   // const addToken = [BooTokenAddress, LifeTokenAddress, IWETHAddress];
-  // BooToken Token deployed to 0x04f1A5b9BD82a5020C49975ceAd160E98d8B77Af
-  // ERC20Life Token deployed to 0xde79380FBd39e08150adAA5C6c9dE3146f53029e
-  // SingleSwapToken Token deployed to 0xbFD3c8A956AFB7a9754C951D03C9aDdA7EC5d638
-  // SwapMultiHop Token deployed to 0x38F6F2caE52217101D7CA2a5eC040014b4164E6C
   const addToken = [
-    "0x04f1A5b9BD82a5020C49975ceAd160E98d8B77Af",
-    "0xde79380FBd39e08150adAA5C6c9dE3146f53029e",
-    "0x04f1A5b9BD82a5020C49975ceAd160E98d8B77Af",
+    "0xbFD3c8A956AFB7a9754C951D03C9aDdA7EC5d638",
+    "0x38F6F2caE52217101D7CA2a5eC040014b4164E6C",
+    "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
   ];
 
   const fetchingData = async () => {
